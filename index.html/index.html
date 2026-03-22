@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ROGEL BARBERSHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Botón hamburguesa -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+
+<!-- Menú lateral -->
+<div id="sidebar" class="sidebar">
+    <h2 style="text-align:center; color:#c59d5f;">ROGEL</h2>
+    <a href="#servicios">Precios</a>
+    <a href="#contacto">Dirección</a>
+    <a href="#">Agendar cita</a>
+</div>
+<div id="overlay" onclick="toggleMenu()"></div>
+<!-- Script -->
+<script>
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById("overlay").classList.toggle("active");
+}
+</script>
+
+<section id="inicio" class="hero">
+    <h2>Estilo y Elegancia para Caballeros</h2>
+    <p>La barbería es el arte de crear sin goma de borrar</p>
+    <a href="#servicios" class="btn">Ver precios</a>
+</section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Corte de cabello</h3>
+            <p>$5.00</p>
+        </div>
+        <div class="card">
+            <h3>Afeitado</h3>
+            <p>$3.00</p>
+        </div>
+        <div class="card">
+            <h3>Corte + Barba</h3>
+            <p>$7.00</p>
+        </div>
+        <div class="card">
+            <h3>Corte + Diseño</h3>
+            <p>$9.00</p>
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCposOC8yyOrzGBTmnklKFpoZu8egjOUAI7g&s">
+        <img src="https://via.placeholder.com/200">
+        <img src="https://via.placeholder.com/200">
+    </div>
+</section>
+<a href="https://wa.me/503750593308" class="whatsapp" target="_blank">💬</a>
+
+<section id="Direccion">
+    <h2>Direccion</h2>
+    <p>📍 Plaza mundo Apopa, San Salvador, El Salvador</p>
+    <p>📞 7505-9308</p>
+</section>
+
+<footer>
+    <p>© 2026 ROGEL BARBERSHOP</p>
+</footer>
+
+</body>
+</html>
